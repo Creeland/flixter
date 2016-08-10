@@ -9,7 +9,7 @@
   background: url("gplaypattern.png")
 }
 
-.navbar-inverse a.navbar-brand {
+.navbar-default a.navbar-brand {
   font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
   font-weight: 100;
   color: black;
@@ -50,6 +50,9 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 
-
+body {
+  background: url("bg.png");
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+}
 
 
