@@ -7,6 +7,9 @@ class Instructor::CoursesController < ApplicationController
 
   def create 
     @course = current_user.courses.create(course_params)
+    if @course.user != current_user
+      return render text: "Unauthorized", status: "unauthorized"
+    end 
     if @course.valid?
       redirect_to instructor_course_path(@course)
     else
@@ -16,9 +19,14 @@ class Instructor::CoursesController < ApplicationController
 
   def show
     @course = Course.find(params[:id])
+    if @course.user != current_user
+      return render text: "Unauthorized", status: "unauthorized"
+    end 
   end
 
   private
+
+  def 
 
   def course_params
     params.require(:course).permit(:title, :description, :cost)
