@@ -67,7 +67,7 @@
                 <span class="glyphicon glyphicon-th-list"></span>
               </div>
               <div class="col-xs-11 text-center">
-                <p><b><%= lesson.title %></b></p>
+                <p><b><%= link_to(lesson.title, lesson_path(lesson)) %></b></p>
                 <p><%= lesson.subtitle %></p>
               </div>
               <br class="clr"></br>
